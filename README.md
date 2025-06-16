@@ -231,6 +231,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <h3>Thank You</h3>
-  <p>Built with ❤️ by Saurab Mishra</p>
+  <p>Saurab Mishra</p>
   <p>Data Science | Machine Learning | AI | NLP | Multi-agent Systems</p>
 </div> 
