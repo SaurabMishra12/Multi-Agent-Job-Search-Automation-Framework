@@ -1,4 +1,4 @@
-# 🤖 Multi-Agent Job Search Automation Framework
+#  Multi-Agent Job Search Automation Framework
 
 <div align="center">
 
