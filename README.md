@@ -1,14 +1,15 @@
-# 🚀 Advanced Job Search Automation Framework
+# 🤖 Multi-Agent Job Search Automation Framework
 
 <div align="center">
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/status-production-ready-success)]()
+[![Status](https://img.shields.io/badge/status-research%20ready-success)]()
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Security](https://img.shields.io/badge/security-hardened-brightgreen)]()
+[![AI](https://img.shields.io/badge/AI-powered-blueviolet)]()
+[![MAS](https://img.shields.io/badge/Multi--Agent%20System-orange)]()
 
-*A sophisticated, AI-powered framework for intelligent job search automation and application management*
+*A sophisticated Multi-Agent System (MAS) framework for intelligent job search automation and application management, leveraging advanced AI techniques*
 
 </div>
 
@@ -16,87 +17,95 @@
 
 ```mermaid
 graph TB
-    subgraph "Core Engine"
-        A[Job Search Engine] --> B[Multi-Platform Scraper]
-        B --> C[Data Processor]
-        C --> D[Application Manager]
+    subgraph "Multi-Agent Core"
+        A[Coordinator Agent] --> B[Search Agent]
+        A --> C[Analysis Agent]
+        A --> D[Application Agent]
+        
+        B --> E[LinkedIn Agent]
+        B --> F[Indeed Agent]
+        B --> G[Custom Board Agent]
     end
 
-    subgraph "Platform Integration"
-        E[LinkedIn] --> B
-        F[Indeed] --> B
-        G[Custom Boards] --> B
+    subgraph "AI Processing Layer"
+        H[NLP Engine] --> I[Skill Matcher]
+        I --> J[Relevance Scorer]
+        J --> K[Decision Engine]
     end
 
-    subgraph "Data Management"
-        H[CSV Database] --> I[Job Tracker]
-        I --> J[Application Logger]
+    subgraph "Knowledge Base"
+        L[Job Database] --> M[Skill Ontology]
+        M --> N[Market Intelligence]
     end
 
-    subgraph "Document Processing"
-        K[Resume Parser] --> L[Cover Letter Generator]
-        L --> M[Document Exporter]
+    subgraph "Learning System"
+        O[Performance Metrics] --> P[Adaptive Learning]
+        P --> Q[Strategy Optimizer]
     end
 
-    D --> H
-    C --> K
+    B --> H
+    C --> H
+    D --> L
+    K --> O
 ```
 
-## 🌟 Implemented Features
+## 🌟 Advanced Features
 
-### 🔍 Intelligent Job Search
+### 🤖 Multi-Agent Coordination
+- Distributed task allocation
+- Inter-agent communication protocols
+- Dynamic role assignment
+- Conflict resolution mechanisms
+- Collective decision making
+
+### 🧠 AI-Powered Analysis
 ```mermaid
 graph LR
-    A[Search Engine] --> B[Keyword Analysis]
-    B --> C[Location Filtering]
-    C --> D[Job Matching]
-    D --> E[Result Ranking]
+    A[Input Processing] --> B[Feature Extraction]
+    B --> C[Pattern Recognition]
+    C --> D[Decision Making]
+    D --> E[Action Execution]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-- Multi-platform job scraping (LinkedIn, Indeed)
-- Advanced keyword matching
-- Location-based filtering
-- Custom search parameters
-- Result ranking and prioritization
+- Natural Language Processing for job description analysis
+- Machine Learning-based skill matching
+- Neural network for relevance scoring
+- Reinforcement learning for strategy optimization
+- Transfer learning for cross-platform adaptation
 
-### 📊 Data Management
-- CSV-based job database
-- Application tracking system
-- Search result logging
-- Export to DOCX format
-- Custom data filtering
-
-### 🔒 Security Implementation
-- Environment-based configuration
-- Secure API key management
-- Headless browser operation
-- Rate limiting and throttling
-- Proxy support
+### 📊 Intelligent Data Management
+- Graph-based knowledge representation
+- Ontology-driven skill matching
+- Temporal data analysis
+- Market trend prediction
+- Adaptive filtering systems
 
 ## 🛠 Technical Implementation
 
 ```mermaid
 graph TD
-    subgraph "Core Components"
-        A[job_board_scrapers.py] --> B[job_search_agents.py]
-        B --> C[export_jobs_to_docx.py]
+    subgraph "Agent System"
+        A[Coordinator] --> B[Search Agents]
+        B --> C[Analysis Engine]
+        C --> D[Application Manager]
     end
 
-    subgraph "Configuration"
-        D[config.py] --> E[utils/env_manager.py]
-        E --> F[.env]
+    subgraph "AI Components"
+        E[NLP Processor] --> F[ML Models]
+        F --> G[Decision Engine]
     end
 
-    subgraph "Data Storage"
-        G[jobs_database.csv] --> H[applied_jobs.csv]
-        H --> I[job_search_results.csv]
+    subgraph "Data Layer"
+        H[Graph Database] --> I[Knowledge Base]
+        I --> J[Learning System]
     end
 
-    A --> G
-    B --> G
+    A --> E
+    C --> H
+    D --> J
 ```
 
 ## 🚀 Getting Started
@@ -105,13 +114,14 @@ graph TD
 - Python 3.8+
 - Chrome/Chromium browser
 - Virtual environment support
+- CUDA support (optional, for GPU acceleration)
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/job-search-automation.git
-cd job-search-automation
+git clone https://github.com/SaurabMishra12/MAS_towards_AGI.git
+cd MAS_towards_AGI
 
 # Create and activate virtual environment
 python -m venv .venv
@@ -126,113 +136,92 @@ cp .env.template .env
 # Edit .env with your configuration
 ```
 
-### Configuration
+## 💡 Advanced Usage
+
+### Multi-Agent Configuration
+```python
+from job_search_agents import AgentCoordinator
+
+coordinator = AgentCoordinator(
+    search_agents=['linkedin', 'indeed'],
+    analysis_agents=['nlp', 'ml'],
+    application_agents=['auto', 'manual']
+)
+
+# Start coordinated search
+results = coordinator.execute_search(
+    strategy='adaptive',
+    learning_rate=0.01,
+    exploration_rate=0.2
+)
+```
+
+### AI Model Integration
+```python
+from ai_engine import JobAnalyzer
+
+analyzer = JobAnalyzer(
+    model_type='transformer',
+    pretrained_model='job-bert',
+    fine_tune=True
+)
+
+analysis = analyzer.process_job(
+    job_description="...",
+    candidate_profile="...",
+    market_context="..."
+)
+```
+
+## 📊 System Performance
 
 ```mermaid
 graph TD
-    A[Environment Setup] --> B[API Configuration]
-    B --> C[Personal Info]
-    C --> D[Search Parameters]
-    D --> E[Application Settings]
+    A[Search Success] --> B[Match Quality]
+    B --> C[Application Rate]
+    C --> D[Interview Rate]
+    D --> E[Offer Rate]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-## 💡 Advanced Usage
+## 🔬 Research Components
 
-### Job Search Configuration
-```python
-from job_search_agents import JobSearchAgent
+- **Multi-Agent Learning**
+  - Cooperative learning algorithms
+  - Distributed optimization
+  - Emergent behavior analysis
+  - Agent communication protocols
 
-agent = JobSearchAgent(
-    keywords=["Python", "Machine Learning"],
-    locations=["Remote", "New York"],
-    max_results=50
-)
+- **AI Models**
+  - Transformer-based job analysis
+  - Graph neural networks for skill matching
+  - Reinforcement learning for strategy optimization
+  - Transfer learning across platforms
 
-# Start search
-results = agent.search_jobs()
-```
+## 📈 Future Research Directions
 
-### Document Export
-```python
-from export_jobs_to_docx import JobExporter
-
-exporter = JobExporter("jobs_database.csv")
-exporter.export_to_docx(
-    output_path="job_search_results.docx",
-    filter_criteria={"status": "new"}
-)
-```
-
-## 📊 Data Flow
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Scraper
-    participant Database
-    participant Exporter
-    
-    User->>Scraper: Configure Search
-    Scraper->>Database: Store Results
-    Database->>Exporter: Process Data
-    Exporter->>User: Generate Report
-```
-
-## 🔐 Security Features
-
-- **Data Protection**
-  - Environment variable management
-  - Secure credential storage
-  - Local data encryption
-
-- **Privacy Controls**
-  - Headless browser operation
-  - Minimal data collection
-  - Configurable logging
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Workflow
-
-```mermaid
-graph TD
-    A[Fork Repository] --> B[Create Branch]
-    B --> C[Make Changes]
-    C --> D[Run Tests]
-    D --> E[Submit PR]
-    E --> F[Code Review]
-    F --> G[Merge]
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-```
-
-## 📈 Roadmap
-
-- [ ] Advanced AI job matching
-- [ ] Multi-language support
-- [ ] Real-time job alerts
-- [ ] Interview preparation tools
-- [ ] Enhanced analytics dashboard
+- [ ] Advanced multi-agent coordination protocols
+- [ ] Cross-platform transfer learning
+- [ ] Dynamic strategy adaptation
+- [ ] Emergent behavior analysis
+- [ ] Quantum-inspired optimization
 
 ## 📚 Documentation
 
-- [API Reference](docs/api.md)
 - [Architecture Guide](docs/architecture.md)
-- [Security Guide](docs/security.md)
-- [Contributing Guide](docs/contributing.md)
+- [Agent System Design](docs/agents.md)
+- [AI Models](docs/ai_models.md)
+- [Research Methodology](docs/research.md)
 
 ## 🏆 Acknowledgments
 
 - [Selenium](https://www.selenium.dev/) - Web automation
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) - Web scraping
-- [Pandas](https://pandas.pydata.org/) - Data processing
-- [python-docx](https://python-docx.readthedocs.io/) - Document generation
+- [PyTorch](https://pytorch.org/) - Deep learning
+- [NetworkX](https://networkx.org/) - Graph analysis
+- [Hugging Face](https://huggingface.co/) - NLP models
 
 ## 📄 License
 
@@ -242,5 +231,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <h3>Thank You</h3>
-  <p>Built with ❤️ by the Job Search Automation Team</p>
+  <p>Built with ❤️ by Saurab Mishra</p>
+  <p>Data Science | Machine Learning | AI | NLP | Multi-agent Systems</p>
 </div> 
