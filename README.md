@@ -13,7 +13,7 @@
 
 </div>
 
-## 📊 System Architecture
+##  System Architecture
 
 ```mermaid
 graph TB
@@ -49,16 +49,16 @@ graph TB
     K --> O
 ```
 
-## 🌟 Advanced Features
+##  Advanced Features
 
-### 🤖 Multi-Agent Coordination
+###  Multi-Agent Coordination
 - Distributed task allocation
 - Inter-agent communication protocols
 - Dynamic role assignment
 - Conflict resolution mechanisms
 - Collective decision making
 
-### 🧠 AI-Powered Analysis
+###  AI-Powered Analysis
 ```mermaid
 graph LR
     A[Input Processing] --> B[Feature Extraction]
@@ -73,10 +73,10 @@ graph LR
 - Natural Language Processing for job description analysis
 - Machine Learning-based skill matching
 - Neural network for relevance scoring
-- Reinforcement learning for strategy optimization
+- Reinforcement learning for strategy optimisation
 - Transfer learning for cross-platform adaptation
 
-### 📊 Intelligent Data Management
+###  Intelligent Data Management
 - Graph-based knowledge representation
 - Ontology-driven skill matching
 - Temporal data analysis
@@ -108,7 +108,7 @@ graph TD
     D --> J
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -173,7 +173,7 @@ analysis = analyzer.process_job(
 )
 ```
 
-## 📊 System Performance
+##  System Performance
 
 ```mermaid
 graph TD
@@ -186,7 +186,7 @@ graph TD
     style E fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-## 🔬 Research Components
+##  Research Components
 
 - **Multi-Agent Learning**
   - Cooperative learning algorithms
@@ -200,7 +200,7 @@ graph TD
   - Reinforcement learning for strategy optimization
   - Transfer learning across platforms
 
-## 📈 Future Research Directions
+##  Future Research Directions
 
 - [ ] Advanced multi-agent coordination protocols
 - [ ] Cross-platform transfer learning
@@ -208,14 +208,14 @@ graph TD
 - [ ] Emergent behavior analysis
 - [ ] Quantum-inspired optimization
 
-## 📚 Documentation
+##  Documentation
 
 - [Architecture Guide](docs/architecture.md)
 - [Agent System Design](docs/agents.md)
 - [AI Models](docs/ai_models.md)
 - [Research Methodology](docs/research.md)
 
-## 🏆 Acknowledgments
+##  Acknowledgments
 
 - [Selenium](https://www.selenium.dev/) - Web automation
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) - Web scraping
@@ -223,7 +223,7 @@ graph TD
 - [NetworkX](https://networkx.org/) - Graph analysis
 - [Hugging Face](https://huggingface.co/) - NLP models
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
